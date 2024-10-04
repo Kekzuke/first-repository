@@ -24,6 +24,7 @@
     else
       Println(2);
   end;
+  
   var y1 := ReadInteger('Введите год №1');
   var y2 := ReadInteger('Введите год №2');
   var sum := 0;
@@ -37,4 +38,8 @@
       sum += 365;
   end;
   Println($'Количество дней между этими годами(Включительно): {sum}');
+  
+  var hours := ReadInteger('Введите количество часов:');
+  Assert(hours > 0);
+  Println($'Секунд в ваших часах: {hours * 3600}');
 end.
